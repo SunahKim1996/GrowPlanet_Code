@@ -101,7 +101,7 @@ public class TileEffectManager : Singleton<TileEffectManager>
     /// <summary>
     /// 
     /// </summary>
-    /// <param name="value"></param> 타일 추가(1)/삭제(-1) 구분
+    /// <param name="value"> 타일 추가(1)/삭제(-1) 구분 </param> 
     public void CheckAllEffect(DefaultTile originTile, int targetTileID, int q, int r, int typeID, int value)
     {
         CheckEffect(targetTileID, q, r, typeID, originTile, value);
@@ -126,8 +126,8 @@ public class TileEffectManager : Singleton<TileEffectManager>
     /// <summary>
     /// 
     /// </summary>
-    /// <param name="originTile"></param> 현재 타일
-    /// <param name="targetTile"></param> originTile 과의 상성을 비교할 타일
+    /// <param name="originTile"> 현재 타일 </param> 
+    /// <param name="targetTile"> originTile 과의 상성을 비교할 타일 </param> 
     private void Set_NearByEffectValue(DefaultTile originTile, DefaultTile targetTile, int value)
     {
         int tileID = originTile.tileID;
